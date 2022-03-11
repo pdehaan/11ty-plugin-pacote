@@ -1,19 +1,28 @@
 {
   "name": "11ty-plugin-pacote",
-  "version": "1.0.0",
   "description": "",
-  "main": ".eleventy.js",
-  "scripts": {
-    "build": "eleventy",
-    "pretty": "npx prettier www --write",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
+  "version": "1.0.0",
   "author": "Peter deHaan <peter@deseloper.com>",
-  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/pdehaan/11ty-plugin-pacote/issues"
+  },
+  "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
     "bytes": "^3.1.2",
     "pacote": "^13.0.3"
+  },
+  "homepage": "https://github.com/pdehaan/11ty-plugin-pacote#readme",
+  "keywords": [],
+  "license": "MPL-2.0",
+  "main": ".eleventy.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11ty-plugin-pacote.git"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "pretty": "npx prettier www --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
