@@ -1,0 +1,25 @@
+---
+title: OK
+dist_tags:
+  - 0.12
+  - latest
+  - beta
+  - canary
+---
+
+<table>
+<thead>
+<tr>
+  <td colspan="2">VERSION</td>
+  <td>FILE COUNT</td>
+  <td>SIZE</td>
+  <td>ENGINE</td>
+</tr>
+</thead>
+<tbody>
+{% for tag in dist_tags %}
+  {% assign _tag = "@11ty/eleventy@" | append: tag %}
+  {% pacote_manifest _tag %}
+{% endfor %}
+</tbody>
+</table>

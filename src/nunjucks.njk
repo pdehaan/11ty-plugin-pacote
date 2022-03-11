@@ -1,0 +1,25 @@
+---
+title: OK
+dist_tags:
+  - 0.12
+  - latest
+  - beta
+  - canary
+---
+
+<table>
+<thead>
+<tr>
+  <td colspan="2">VERSION</td>
+  <td>FILE COUNT</td>
+  <td>SIZE</td>
+  <td>ENGINE</td>
+</tr>
+</thead>
+<tbody>
+{% for dist_tag in dist_tags %}
+  {% set version_string = "@11ty/eleventy@" + dist_tag %}
+  {% pacote_manifest2 version_string %}
+{% endfor %}
+</tbody>
+</table>

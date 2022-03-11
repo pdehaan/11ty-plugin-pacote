@@ -1,0 +1,7 @@
+<tr>
+  <td>{{ manifest.version }}</td>
+  <td><kbd>npm i {{ name }}</kbd></td>
+  <td>{{ manifest.dist.fileCount }}</td>
+  <td>{{ manifest.dist.unpackedSize | bytes }}</td>
+  <td>Node {{ manifest.engines.node | escape }}</td>
+</tr>
